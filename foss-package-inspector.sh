@@ -1,12 +1,11 @@
 #!/bin/bash
 # Script 2: FOSS Package Inspector
 
-PACKAGE="git"   # e.g. apache2, mysql, vlc, firefox
-
+PACKAGE="git"
 # Check if package is installed
 if dpkg -l | grep -q "^ii  $PACKAGE"; then
     echo "$PACKAGE is installed."
-    apt show $PACKAGE 2>/dev/null | grep -E 'Version|License|Description'
+    dpkg -s $PACKAGE | grep -E 'Version|Maintainer|Description'
 else
     echo "$PACKAGE is NOT installed."
 fi
@@ -17,11 +16,11 @@ case $PACKAGE in
         echo "Apache: the web server that built the open internet" ;;
 
     mysql-server)
-        echo "MySQL: open source at the heart of millions of apps";;
+        echo "MySQL: open source database";;
     git)
-        echo "Git: distributed version control that enables collaboration" ;;
+        echo "Git: distributed version control system for tracking the code" ;;
     firefox)
-        echo "Firefox: a browser supporting an open and free web" ;;
+        echo "Firefox: open source browser" ;;
             *)
-        echo "No philosophy note available for this package" ;;
+        echo "Unknown package" ;;
 esac
