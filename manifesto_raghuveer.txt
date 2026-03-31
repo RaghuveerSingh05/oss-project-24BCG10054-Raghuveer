@@ -1,0 +1,5 @@
+On 31 March 2026, I thought about open source.
+I use git in my daily work.
+For me, freedom means sharing.
+I would like to build learning app and share it with others.
+Open source helps people learn and work together.
