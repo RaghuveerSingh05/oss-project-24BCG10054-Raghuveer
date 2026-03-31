@@ -10,19 +10,19 @@ All scripts are written in bash and tested on Ubuntu.
 
 Scripts:
 
-1. system-identity.sh 
+1. system-identity.sh : 
    Shows basic system information like user, kernel , uptime.
 
-2. foss-package-inspector.sh
+2. foss-package-inspector.sh :
    Checks if a package is installed and show some details.
 
-3. disk-permission-auditor.sh
+3. disk-permission-auditor.sh :
    Checks directories and shows permissions and size.
 
-4. log-file-analyzer.sh
+4. log-file-analyzer.sh :
    Reads log file and counts keyword occurrence.
 
-5. open-source-manifesto.sh
+5. open-source-manifesto.sh :
    Takes input from user and generates a small manifesto.
 
 How to Run :
